@@ -1,6 +1,6 @@
 
 //import img from '../../../assets/joyBgRemodved.png'
-import { FaBook, FaGraduationCap } from "react-icons/fa";
+
 import htmlIcon from '../../../assets/HTML.svg'
 import cssIcon from '../../../assets/CSS.svg'
 import javascriptIcon from '../../../assets/JavaScript.svg'
@@ -9,17 +9,27 @@ import reactIcon from '../../../assets/React-Dark.svg'
 import expressIcon from '../../../assets/ExpressJS-Dark.svg'
 import mongoIcon from '../../../assets/MongoDB.svg'
 import firebaseIcon from '../../../assets/Firebase-Dark.svg'
-
+import { useEffect } from "react";
+import AOs from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
 const Skill = () => {
+    useEffect(() => {
+        AOs.init({
+
+            offset: 150,
+            duration: 1000,
+
+        });
+    }, []);
     return (
         <div className=" mt-10 lg:mt-20 mx-2">
             <div className=" container mx-auto">
                 <div className="mb-5">
-                    <h2 className=" text-center text-[#DE1945] text-4xl font-bold py-2">Skills and Education</h2>
+                    <h2 className=" text-center text-[#DE1945] text-4xl font-bold py-2">My Skills</h2>
                 </div>
-                <div className="flex flex-col md:flex-row justify-start lg:ml-20 ">
-                    <div className="text-white w-[60%] mr-5 mb-5">
-                        <h2 className="text-4xl font-semibold mb-5 border-b-2 inline-block border-b-[#DE1945]">Skills</h2>
+              
+                    
+                    
                         {/* <p>HTML</p>
                         <progress className="progress progress-error w-56 mb-2" value={90} max="100"></progress>
                         <p>CSS</p>
@@ -30,8 +40,8 @@ const Skill = () => {
                         <progress className="progress progress-error w-56 mb-2" value="60" max="100"></progress>
                         <p>REACT</p>
                         <progress className="progress progress-error w-56 mb-2" value="70" max="100"></progress> */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            <div className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966] w-[400px] lg:w-full">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-white overflow-hidden w-full">
+                            <div data-aos="flip-left" className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966] lg:w-full">
 
                                 <img className="w-[60px]" src={htmlIcon} alt="" />
                                 <div className="w-full">
@@ -39,7 +49,7 @@ const Skill = () => {
                                     <progress className="progress progress-error w-56 mb-2" value={90} max="100"></progress>
                                 </div>
                             </div>
-                            <div className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966]  w-[400px] lg:w-full">
+                            <div data-aos="flip-left"  className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966] lg:w-full">
 
                                 <img className="w-[60px]" src={cssIcon} alt="" />
                                 <div>
@@ -47,7 +57,7 @@ const Skill = () => {
                                     <progress className="progress progress-error w-56 mb-2" value="80" max="100"></progress>
                                 </div>
                             </div>
-                            <div className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966]  w-[400px] lg:w-full">
+                            <div data-aos="flip-left"  className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966] lg:w-full">
 
                                 <img className="w-[60px]" src={javascriptIcon} alt="" />
                                 <div>
@@ -55,7 +65,7 @@ const Skill = () => {
                                     <progress className="progress progress-error w-56 mb-2" value="80" max="100"></progress>
                                 </div>
                             </div>
-                            <div className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966]  w-[400px] lg:w-full">
+                            <div data-aos="flip-left"  className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966] lg:w-full">
 
                                 <img className="w-[60px]" src={tailIcon} alt="" />
                                 <div>
@@ -63,7 +73,7 @@ const Skill = () => {
                                     <progress className="progress progress-error w-56 mb-2" value="60" max="100"></progress>
                                 </div>
                             </div>
-                            <div className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966] w-[400px] lg:w-full">
+                            <div data-aos="flip-left"  className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966] lg:w-full">
 
                                 <img className="w-[60px]" src={reactIcon} alt="" />
                                 <div>
@@ -71,7 +81,7 @@ const Skill = () => {
                                     <progress className="progress progress-error w-56 mb-2" value="70" max="100"></progress>
                                 </div>
                             </div>
-                            <div className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966] w-[400px] lg:w-full">
+                            <div data-aos="flip-left"  className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966] lg:w-full">
 
                                 <img className="w-[60px]" src={expressIcon} alt="" />
                                 <div>
@@ -79,7 +89,7 @@ const Skill = () => {
                                     <progress className="progress progress-error w-56 mb-2" value="50" max="100"></progress>
                                 </div>
                             </div>
-                            <div className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966] w-[400px] lg:w-full">
+                            <div data-aos="flip-left"  className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966] lg:w-full">
 
                                 <img className="w-[60px]" src={mongoIcon} alt="" />
                                 <div>
@@ -87,7 +97,7 @@ const Skill = () => {
                                     <progress className="progress progress-error w-56 mb-2" value="50" max="100"></progress>
                                 </div>
                             </div>
-                            <div className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966] w-[400px] lg:w-full ">
+                            <div data-aos="flip-left"  className="flex gap-2 p-2 hover:-translate-y-1 duration-500 items-end border-[2px] rounded-md border-[#344966] lg:w-full ">
 
                                 <img className="w-[60px]" src={firebaseIcon} alt="" />
                                 <div>
@@ -100,31 +110,9 @@ const Skill = () => {
 
                     </div>
                     {/* education section */}
-                    <div className="text-white lg:w-[40%]">
-                        <h2 className="text-4xl font-semibold border-b-2 border-b-[#DE1945] inline-block mb-5">Education</h2><br />
-                        <div className=" border-2 border-[#344966] p-2 w-full rounded-md">
-                            <div className="flex items-center gap-2"><div className=" border-2 rounded-full w-[30px] h-[30px] flex items-center justify-center"><FaGraduationCap /></div>
-                                <h2 className="text-2xl">Bachelor</h2></div>
-
-                            <div className="ml-10">
-                                <h2 className="flex text-xl gap-2 items-center"> <p>Bsc. in CSE</p>  </h2>
-                                <p className="mb-5">Islamic University Kustia,Bangladesh.</p>
-                            </div>
-                            <div className="flex items-center gap-2"><div className=" border-2 rounded-full w-[30px] h-[30px] flex items-center justify-center"><FaBook /></div>
-                                <h2 className="text-2xl">HSC</h2>
-                            </div>
-                            <div className="ml-10">
-                                <h2 className="flex text-xl gap-2 items-center"> <p>2015</p>  </h2>
-                                <p className="mb-5">Govt. KC college, jhenaidah</p>
-                            </div>
-                        </div>
-
-
-
-                    </div>
+                    
                 </div>
-            </div>
-        </div>
+        
     );
 };
 

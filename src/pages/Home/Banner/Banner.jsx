@@ -1,10 +1,16 @@
-import img from '../../../assets/Joyremovebg-preview.png'
+
 // import resume from '../../../assets/resume.pdf'
 import { Typewriter } from 'react-simple-typewriter'
+import bannerImg from '../../../assets/codingBanner.png'
+
 const Banner = () => {
     return (
-        <div className='bg-[#0D1821] w-full flex flex-col-reverse gap-5 md:flex-row items-center justify-between'>
-            <div className="">
+        <div className=' w-full flex flex-col-reverse gap-5 md:flex-row items-center justify-between'>
+            <div className='relative w-full mb-10'>
+                <img className='w-full h-[500px]' src={bannerImg} alt="" />
+            </div>
+            <div className="absolute">
+                
                 <div className="text-5xl text-white md:pl-20">
                     <h2 className="mb-2">Hi. I am</h2>
                     <h2>Shakib Ahmed <span className="text-[#DE1945] font-bold">JOY</span></h2>
@@ -30,7 +36,7 @@ const Banner = () => {
 
             </div>
             <div>
-                <img className='h-[400px] ' src={img} alt="" />
+                {/* <img className='h-[400px] ' src={img} alt="" /> */}
             </div>
 
         </div>
