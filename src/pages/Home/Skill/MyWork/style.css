@@ -1,0 +1,56 @@
+.damion-regular {
+    font-family: "Damion", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* .heading{
+    transform: rotate(-5deg) skew(-5deg);
+  } */
+.overlay_container{
+    background-color: rgba(0, 0, 0, 0.75)
+}
+.main_container:hover .overlay_container{
+    height: 100%;
+}
+
+.card{
+  position: relative;
+  width: 350px;
+  height: 450px;
+background: #fff;
+transition: 0.5 sec;
+}
+.line{
+position: absolute;
+inset: 0;
+background:#000;
+overflow: hidden;
+}
+.card .line::before {
+  content: '';
+  position: absolute;
+  top:50%;
+  left: 50%;
+  width:580px;
+  height: 150px;
+  background:linear-gradient(transparent,#e72e2e,#e72e2e,transparent);
+  animation: animate 10s linear infinite;
+}
+.cardimg{
+  width: calc(100%-6px);
+  height: calc(100%-6px);
+}
+@keyframes animate {
+  0%{
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
+}
+.card .line::after{
+  content:'';
+  position:absolute;
+  inset: 3px;
+  background:#292929;
+}

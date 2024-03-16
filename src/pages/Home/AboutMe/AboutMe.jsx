@@ -2,7 +2,7 @@
 import img from '../../../assets/joy.png'
 const AboutMe = () => {
     return (
-        <div className=' lg:ml-20 mx-2'>
+        <div id='about' className=' lg:ml-20 mx-2'>
            <div className=' lg:w-3/4  flex flex-col-reverse md:flex-row gap-10'>
             <img  className="bg-[#344966] rounded-md hover:scale-105 duration-300" src={img} alt="" />
             <div>

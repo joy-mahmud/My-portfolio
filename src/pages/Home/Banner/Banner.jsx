@@ -5,7 +5,7 @@ import bannerImg from '../../../assets/codingBanner.png'
 
 const Banner = () => {
     return (
-        <div className=' w-full flex flex-col-reverse gap-5 md:flex-row items-center justify-between'>
+        <div id='home' className=' w-full flex flex-col-reverse gap-5 md:flex-row items-center justify-between'>
             <div className='relative w-full mb-10'>
                 <img className='w-full h-[500px]' src={bannerImg} alt="" />
             </div>

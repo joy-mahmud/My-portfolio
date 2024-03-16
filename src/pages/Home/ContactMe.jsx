@@ -16,7 +16,7 @@ const ContactMe = () => {
       });
   };
     return (
-        <div className="flex flex-col md:flex-row gap-2 lg:px-28 mb-20 mx-2">
+        <div id="contact" className="flex flex-col md:flex-row gap-2 lg:px-28 mb-20 mx-2">
             <div className="text-white lg:w-[45%]">
                 <h2 className="text-4xl font-semibold mb-3">Contact me</h2>
                 <div className="flex gap-2 items-center mb-3"><IoIosMail className="text-2xl text-[#DE1945]"/><p>joymahmudiucse@gmail.com</p></div>
